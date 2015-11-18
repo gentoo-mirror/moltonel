@@ -11,10 +11,11 @@ SRC_URI="http://packages.couchbase.com/releases/${PV}/couchbase-server-community
 
 LICENSE="Couchbase-Inc-Community-Edition" #http://www.couchbase.com/community
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
-RDEPEND="sys-libs/ncurses:5/5[tinfo]"
+RDEPEND="sys-libs/ncurses:5/5[tinfo]
+		 >=dev-db/sqlite-3.5.9"
 DEPEND="${RDEPEND}"
 
 export CONFIG_PROTECT="${CONFIG_PROTECT} /opt/${PN}/var/lib/${PN}/"
@@ -39,13 +40,10 @@ src_install() {
 
 	# bin install / copy
 	dodir /opt/couchbase
-	tar xfm opt/couchbase/lib/python/pysqlite2.tar -C opt/couchbase/lib/python || die
 	cp -a opt/couchbase/* "${D}"/opt/couchbase/
 
 	dodir /opt/couchbase/var/lib/couchbase/{data,mnesia,tmp}
 
-	fperms o+x /opt/couchbase/lib/python/pysqlite2/
-	fperms -R o+r /opt/couchbase/lib/python/pysqlite2/
 	fowners -R couchbase:couchbase /opt/couchbase/
 
 	doinitd "${FILESDIR}"/couchbase-server
