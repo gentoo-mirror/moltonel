@@ -1,2 +1,2 @@
 dev-db/couchbase-server-bin 3.0.1 4.0.0: Distributed key-value database management system, community edition
-dev-libs/libcouchbase 2.4.4: Couchbase C Client Library
+dev-libs/libcouchbase 2.4.4 2.6.3: Couchbase C Client Library
