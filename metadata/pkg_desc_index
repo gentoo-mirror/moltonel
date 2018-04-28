@@ -1,2 +1,2 @@
-app-portage/emlop 0.1.0: A fast, accurate, ergonomic emerge.log parser
+app-portage/emlop 0.1.0 0.2.0: A fast, accurate, ergonomic emerge.log parser
 dev-libs/libcouchbase 2.4.4 2.6.3: Couchbase C Client Library
