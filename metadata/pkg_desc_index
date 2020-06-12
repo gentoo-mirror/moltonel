@@ -1,4 +1,3 @@
-app-portage/emlop 0.1.0 0.2.0 0.3.0: A fast, accurate, ergonomic emerge.log parser
 app-shells/hstr 2.0: Shell history suggest box
 dev-db/couchbase-server-bin 4.1.0: Distributed key-value database management system, community edition
 dev-libs/libcouchbase 2.4.4 2.6.3: Couchbase C Client Library
