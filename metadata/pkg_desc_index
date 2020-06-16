@@ -1,4 +1,4 @@
-app-shells/hstr 2.0: Shell history suggest box
+app-portage/emlop 0.3.1: A fast, accurate, ergonomic emerge.log parser
 dev-db/couchbase-server-bin 4.1.0: Distributed key-value database management system, community edition
 dev-libs/libcouchbase 2.4.4 2.6.3: Couchbase C Client Library
 media-gfx/plantuml 1.2018.6 1.2019.4: Draw UML diagrams using a simple and human readable text description
