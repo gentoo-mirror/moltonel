@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DESCRIPTION=Dummy ebuild that takes a long time to install nothing
+EAPI=7
+HOMEPAGE=https://github.com/vincentdephily/moltonel-ebuilds
+KEYWORDS=*
+LICENSE=Unlicense
+SLOT=10
+_md5_=e10869055e84839e290c14b090bb0ca2
