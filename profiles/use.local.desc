@@ -3,4 +3,3 @@
 # * generated automatically using pmaint *
 
 app-portage/emlop:fish-completion - Enable fish completion support.
-dev-libs/libcouchbase:tools - Install couchbase client commandline utility
