@@ -1,3 +1,3 @@
 app-portage/dummybuild 0.1.5 0.1.10 0.1.20 0.1.60 0.1.600: Dummy ebuild that takes a long time to install nothing
-app-portage/emlop 0.4.2 0.5.0 0.6.0: A fast, accurate, ergonomic emerge.log parser
+app-portage/emlop 0.4.2 0.5.0 0.6.0 0.6.1: A fast, accurate, ergonomic emerge.log parser
 dev-lang/elixir 1.13.0: Elixir programming language
