@@ -1,4 +1,4 @@
 app-portage/dummybuild 0.1.5 0.1.10 0.1.20 0.1.60 0.1.600: Dummy ebuild that takes a long time to install nothing
 app-portage/emlop 0.5.0 0.6.0 0.6.1 0.7.0: A fast, accurate, ergonomic emerge.log parser
-dev-lang/elixir 1.13.0: Elixir programming language
+dev-lang/elixir 1.13.0 1.17.1: Elixir programming language
 dev-python/gql 3.4.1: GraphQL client for Python
