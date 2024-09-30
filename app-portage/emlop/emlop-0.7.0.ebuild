@@ -68,8 +68,8 @@ CRATES="
 	thiserror-impl@1.0.57
 	thiserror@1.0.57
 	time-core@0.1.2
-	time-macros@0.2.17
-	time@0.3.34
+	time-macros@0.2.18
+	time@0.3.36
 	toml@0.8.10
 	toml_datetime@0.6.5
 	toml_edit@0.22.6
@@ -111,16 +111,18 @@ BDEPEND=">=virtual/rust-1.71.0"
 # rust does not use *FLAGS from make.conf, silence portage warning
 QA_FLAGS_IGNORED="usr/bin/${PN}"
 
+PATCHES=("${FILESDIR}/${P}-time_dep.patch")
+
 src_install() {
 	cargo_src_install
 	dodoc README.md CHANGELOG.md emlop.toml
 	# bash
-	./target/$(usex debug debug release)/emlop complete bash > emlop || die
+	"$(cargo_target_dir)"/emlop complete bash > emlop || die
 	dobashcomp emlop
 	# zsh
-	./target/$(usex debug debug release)/emlop complete zsh > _emlop || die
+	"$(cargo_target_dir)"/emlop complete zsh > _emlop || die
 	dozshcomp _emlop
 	# fish
-	./target/$(usex debug debug release)/emlop complete fish > emlop.fish || die
+	"$(cargo_target_dir)"/emlop complete fish > emlop.fish || die
 	dofishcomp emlop.fish
 }
